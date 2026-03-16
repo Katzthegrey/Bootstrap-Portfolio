@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone your future</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+   <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <!-- Fixed Navbar with Shadow -->
+    <div class="navbar-custom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <!-- Logo with Image -->
+                <div class="logo-container">
+                    <img src="Repository/KatzLogo.jpg" alt="Logo" class="logo-image">
+                    <h3 class="logo-text">
+                        &lt;/&gt; Time to Code
+                    </h3>
+                </div>
+                
+                <!-- Navigation Links (hidden on mobile) -->
+                <nav class="nav-links">
+                    <a class="nav-link-custom active" href="#">Home</a>
+                    <a class="nav-link-custom" href="#">About Me</a>
+                    <a class="nav-link-custom" href="#">Projects</a>
+                    <a class="nav-link-custom" href="#">Skills</a>
+                    <a class="nav-link-custom" href="#">Contact</a>
+                </nav>
+                
+                <!-- Mobile CSS Hamburger Menu trick -->
+                <div class="d-flex align-items-center">
+                    <!-- Button Group (visible on desktop/tablet) -->
+                    <div class="button-group">
+                        <a href="#" class="btn-hire text-decoration-none">
+                            <i class="bi bi-person-plus me-2"></i>Hire Me
+                        </a>
+                        <a href="#" class="btn-cv text-decoration-none">
+                            <i class="bi bi-download me-2"></i>CV
+                        </a>
+                    </div>
+                    
+                  
+                    <input type="checkbox" id="menuToggle" class="menu-checkbox">
+                    <label for="menuToggle" class="menu-icon">
+                        <i class="bi bi-list"></i>
+                    </label>
+                    
+                    <!-- Mobile Menu (controlled by checkbox) -->
+                    <div class="mobile-menu">
+                        <a class="nav-link-custom active" href="#">Home</a>
+                        <a class="nav-link-custom" href="#">About Me</a>
+                        <a class="nav-link-custom" href="#">Projects</a>
+                        <a class="nav-link-custom" href="#">Skills</a>
+                        <a class="nav-link-custom" href="#">Contact</a>
+                        <div class="d-flex flex-column mt-3">
+                            <a href="#" class="btn-hire text-decoration-none text-center mb-2">Hire Me</a>
+                            <a href="#" class="btn-cv text-decoration-none text-center">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+   
+   <!-- Main Hero Section -->
+<main class="hero-section">
+    
+    <!-- Video Background -->
+    <video class="hero-video" autoplay muted loop>
+        <source src="Repository/Banner.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Dark Overlay  -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Content -->
+    <div class="hero-content">
+        <div class="hero-inner">  
+            <h1>Hi I Am Katlego.</h1>
+            <h3>A Full Stack Developer</h3>
+            <p class="lead">I craft beautiful, functional full stack web and app applications with modern technologies taking into account the user Experiences for engaging interactions.</p>
+            
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="www.linkedin.com/in/katlego-mashego-651a83250"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Katzthegrey"><i class="bi bi-github"></i></a>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <a href="#next" class="scroll-indicator">
+                <small>Scroll Down</small>
+                <i class="bi bi-chevron-double-down"></i>
+            </a>
+        </div> 
+    </div>
+</main>
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <span class="d-block text-uppercase small tracking-wide text-secondary mb-3">Get To Know Me</span>
+            <h2 class="display-4 fw-light">About <span class="fw-semibold text-primary">Me</span></h2>
+        </div>
+
+        <!-- Two Column Card -->
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="row g-0">
+                <!-- Left Column -->
+                <div class="col-lg-5 p-4 p-lg-5 bg-white">
+                    <!-- Profile Image -->
+                    <div class="rounded-3 overflow-hidden mb-4 shadow-sm">
+                        <img src="Repository/IMG_0585.jpg" alt="Profile" class="img-fluid w-100">
+                    </div>
+                    
+                    <!-- Contact Details -->
+                    <div class="bg-light rounded-3 p-4 mb-4">
+                        <h3 class="h5 fw-semibold mb-4 pb-2 border-bottom border-2" style="border-color: #8B5CF6 !important; width: fit-content;">
+                            Contact Details
+                        </h3>
+                        
+                        <div class="d-flex align-items-center gap-3 py-2 border-bottom border-light">
+                            <i class="bi bi-person-circle fs-4 text-primary"></i>
+                            <div>
+                                <span class="d-block small text-secondary text-uppercase">Name</span>
+                                <span class="fw-medium">Katlego Mashego</span>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-3 py-2 border-bottom border-light">
+                            <i class="bi bi-briefcase fs-4 text-primary"></i>
+                            <div>
+                                <span class="d-block small text-secondary text-uppercase">Profile</span>
+                                <span class="fw-medium">Full Stack Developer</span>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-3 py-2 border-bottom border-light">
+                            <i class="bi bi-telephone fs-4 text-primary"></i>
+                            <div>
+                                <span class="d-block small text-secondary text-uppercase">Phone</span>
+                                <span class="fw-medium">+27 67 019 7323</span>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-3 py-2">
+                            <i class="bi bi-envelope fs-4 text-primary"></i>
+                            <div>
+                                <span class="d-block small text-secondary text-uppercase">Email</span>
+                                <span class="fw-medium">katzkatlego310@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Badges -->
+                    <div class="bg-light rounded-3 p-4">
+                        <h3 class="h5 fw-semibold mb-4 pb-2 border-bottom border-2" style="border-color: #8B5CF6 !important; width: fit-content;">
+                            Tech Stack & Tools
+                        </h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">C#</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">ASP.Net</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Docker</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">XUnit</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Bootstrap</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">JavaScript</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">React</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Node.js</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Python</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">MySQL</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Git</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Figma</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Wordpress</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">PHP</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Java</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">MongoDB</span>
+                            <span class="badge bg-white text-primary border border-primary rounded-pill px-3 py-2">Postgres</span>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-7 p-4 p-lg-5 bg-light">
+                    <!-- About Highlight Label -->
+                    <div class="mb-4">
+                        <span class="badge bg-white text-primary border border-primary rounded-pill px-4 py-2 fw-semibold">
+                            About me
+                        </span>
+                    </div>
+                    
+                    <!-- About Text -->
+                    <p class="text-secondary mb-4 lh-lg">
+                        I'm a passionate Full Stack Developer with a keen eye for creating beautiful, 
+                        functional web applications. My journey in tech started with a curiosity for 
+                        how things work, which evolved into a career dedicated to solving real-world 
+                        problems through code.
+                    </p>
+                    
+                    <p class="text-secondary mb-4 lh-lg">
+                        I specialize in building responsive, user-friendly interfaces that don't just 
+                        look good but serve a meaningful purpose. Every project I undertake is an 
+                        opportunity to learn something new and push the boundaries of what's possible 
+                        on the web.
+                    </p>
+                    
+                    <p class="text-secondary mb-5 lh-lg">
+                        When I'm not coding, you'll find me exploring new technologies, contributing 
+                        to open-source projects, or sharing knowledge with the developer community. 
+                        I believe in the power of technology to create positive change and make the 
+                        web more accessible to everyone.
+                    </p>
+                    
+                    <!-- Passion Items using Bootstrap Icons and Cards -->
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 bg-white shadow-sm rounded-3 text-center p-3">
+                                <i class="bi bi-phone fs-1 text-primary mb-2"></i>
+                                <span class="small fw-medium">Responsive Web Apps</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 bg-white shadow-sm rounded-3 text-center p-3">
+                                <i class="bi bi-cloud fs-1 text-primary mb-2"></i>
+                                <span class="small fw-medium">Cloud Solutions</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 bg-white shadow-sm rounded-3 text-center p-3">
+                                <i class="bi bi-people fs-1 text-primary mb-2"></i>
+                                <span class="small fw-medium">User-Centric Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--======Selected Projects========-->
+<section id="projects" class="projects-section py-5 bg-light">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <span class="d-block text-uppercase small tracking-wide text-secondary mb-3">Featured Work</span>
+            <h2 class="display-4 fw-light">Recent <span class="fw-semibold text-primary">Projects</span></h2>
+            <p class="lead text-secondary mx-auto" style="max-width: 700px;">
+                A collection of projects I worked on that showcase my skills in building
+                modern web applications using different tech stacks.
+            </p>
+        </div>
+
+        <!-- Projects Grid - 3 columns on large, 2 on medium, 1 on small -->
+        <div class="row g-4">
+            <!-- Project Card 1 - Tesla -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <!-- Banner Image -->
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top project-image" 
+                             alt="Tesla-inspired dashboard project">
+                    </div>
+                    
+                    <div class="card-body">
+                        <!-- Title and Subtitle -->
+                        <h5 class="card-title fw-bold mb-1">Tesla Landing</h5>
+                        <p class="card-text small text-secondary mb-3">Built a One to one tesla landing page with Html and css</p>
+                        
+                        <!-- Buttons -->
+                        <div class="d-flex gap-2">
+                            <a href="https://katlegomashego-ecars.netlify.app" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="https://github.com/Katzthegrey/Tesla-Landing" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 - Netflix -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top project-image" 
+                             alt="Netflix clone project">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-1">Netflix Clone</h5>
+                        <p class="card-text small text-secondary mb-3">Built with Html and Css</p>
+                        
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 - YouTube -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="project-image-wrapper">
+                        <img src="Repository/Screenshot 2026-03-16 195232.png" 
+                             class="card-img-top project-image" 
+                             alt="YouTube analytics project">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-1">YouTube Clone</h5>
+                        <p class="card-text small text-secondary mb-3">Built with Python and YouTube API</p>
+                        
+                        <div class="d-flex gap-2">
+                            <a href="https://katz-viewtube.netlify.app/" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="https://github.com/Katzthegrey/Katz-Youtube-clone" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 - E-Commerce Platform -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="project-image-wrapper">
+                        <img src="Repository/Screenshot 2025-09-29 151809.png" 
+                             class="card-img-top project-image" 
+                             alt="E-commerce platform project">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-1">Clothing E-Commerce</h5>
+                        <p class="card-text small text-secondary mb-3">Built with MERN Stack</p>
+                        
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 - Car Rental App -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="project-image-wrapper">
+                        <img src="Repository/Screenshot 2025-10-05 210710.png" 
+                             class="card-img-top project-image" 
+                             alt="Task management application">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-1">Car Rental system Advanced Crud</h5>
+                        <p class="card-text small text-secondary mb-3">Built with ASP.NET and SQL reflecting real life business logic with a secure registration/login flow and client/admin rental management process</p>
+                        
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="https://github.com/Katzthegrey/CarRentalApp" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 - SmartFintech App -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="project-image-wrapper">
+                        <img src="Repository/OIP.jpg" 
+                             class="card-img-top project-image" 
+                             alt="Weather application interface">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-1">Financial Planner With AI Fraud Dtection</h5>
+                        <p class="card-text small text-secondary mb-3">Built with ASP.Net and python machine learning backend and react frontend this application helps users budget their spendings and assists them in making wise purchasing decisions</p>
+                        
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2">
+                                View Website <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="https://github.com/Katzthegrey/SmartFintech" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 45px;">
+                                <i class="bi bi-code-slash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--====Contact Section=====-->
+<section id="contact" class="contact-section py-5 bg-white">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <span class="d-block text-uppercase small tracking-wide text-secondary mb-3">Reach Me</span>
+            <h2 class="display-4 fw-light">Get In <span class="fw-semibold text-primary">Touch</span></h2>
+            <p class="lead text-secondary mx-auto" style="max-width: 700px;">
+                Interested in starting a project or adding me to your team? Reach me 
+                here to bring your ideas to life.
+            </p>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="row g-5">
+            <!-- Left Column - Contact Form -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 bg-light">
+                    <h3 class="h4 fw-semibold mb-4">Send me a message</h3>
+                    
+                    <form class="needs-validation" novalidate>
+                        <!-- Name and Email Row -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-medium">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-lg rounded-3" id="name" placeholder="Name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-medium">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-lg rounded-3" id="email" placeholder="Email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-medium">Subject</label>
+                            <input type="text" class="form-control form-control-lg rounded-3" id="subject" placeholder="Project inquiry, job opportunity, etc.">
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-medium">Message <span class="text-danger">*</span></label>
+                            <textarea class="form-control form-control-lg rounded-3" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100 py-3 rounded-3 fw-semibold d-flex align-items-center justify-content-center gap-2">
+                            Send Message <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column - Contact Info & Social -->
+            <div class="col-lg-5">
+                <!-- Contact Information -->
+                <div class="mb-5">
+                    <h3 class="h4 fw-semibold mb-4">Contact Information</h3>
+                    
+                    <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 mb-3">
+                        <div class="bg-white p-3 rounded-3 shadow-sm">
+                            <i class="bi bi-envelope text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="small text-secondary d-block">Email</span>
+                            <span class="fw-medium">katzkatlego310@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 mb-3">
+                        <div class="bg-white p-3 rounded-3 shadow-sm">
+                            <i class="bi bi-telephone text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="small text-secondary d-block">Phone</span>
+                            <span class="fw-medium">+27 67 019 7323</span>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 mb-3">
+                        <div class="bg-white p-3 rounded-3 shadow-sm">
+                            <i class="bi bi-geo-alt text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="small text-secondary d-block">Location</span>
+                            <span class="fw-medium">Johannesburg, South Africa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Icons Row -->
+                <div class="mb-5">
+                    <h3 class="h4 fw-semibold mb-4">Follow Me</h3>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                           class="btn btn-outline-secondary p-3 rounded-3 d-flex align-items-center justify-content-center" 
+                           style="width: 60px; height: 60px;">
+                            <i class="bi bi-github fs-3"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" 
+                           class="btn btn-outline-secondary p-3 rounded-3 d-flex align-items-center justify-content-center" 
+                           style="width: 60px; height: 60px;">
+                            <i class="bi bi-linkedin fs-3"></i>
+                        </a>
+                        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                           class="btn btn-outline-secondary p-3 rounded-3 d-flex align-items-center justify-content-center" 
+                           style="width: 60px; height: 60px;">
+                            <i class="bi bi-instagram fs-3"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                           class="btn btn-outline-secondary p-3 rounded-3 d-flex align-items-center justify-content-center" 
+                           style="width: 60px; height: 60px;">
+                            <i class="bi bi-twitter-x fs-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Availability Status -->
+             <div class="bg-white border border-success border-opacity-25 rounded-4 p-4 shadow-sm">
+    <div class="d-flex align-items-center gap-3">
+        <!-- Animated dot -->
+        <div class="position-relative">
+            <div class="bg-success rounded-circle" style="width: 16px; height: 16px;"></div>
+            <div class="position-absolute top-0 start-0 bg-success rounded-circle opacity-50" 
+                 style="width: 16px; height: 16px; animation: pulse 2s infinite;"></div>
+        </div>
+        <div>
+            <span class="fw-semibold text-success d-block">Available for work</span>
+            <p class="text-secondary small mb-0 mt-1">
+                Currently available for freelance projects and full-time opportunities.
+            </p>
+        </div>
+    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--===Footer===-->
+<footer class="footer-section bg-dark text-white py-5 position-relative overflow-hidden">
+    <div class="footer-gradient-line"></div>   
+    <!-- Background Elements -->
+    <div class="footer-bg-elements"></div>
+
+    <div class="container position-relative z-3">
+        <!-- Main Footer Content -->
+        <div class="text-center">
+            <!-- Logo -->
+            <div class="mb-4">
+                <div class="d-inline-flex align-items-center gap-2 mb-3">
+                    <div class="text-primary spinning-icon">
+                        <i class="bi bi-code-square fs-3"></i>
+                    </div>
+                    <span class="fs-3 fw-medium">Katz</span>
+                </div>
+                <p class="text-white-50 small mx-auto" style="max-width: 400px;">
+                    Crafting digital experiences that connect developers and end users.
+                </p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="https://github.com/yourusername" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon-link bg-dark bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 45px; height: 45px;">
+                    <i class="bi bi-github fs-5"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon-link bg-dark bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 45px; height: 45px;">
+                    <i class="bi bi-linkedin fs-5"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon-link bg-dark bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 45px; height: 45px;">
+                    <i class="bi bi-twitter-x fs-5"></i>
+                </a>
+                <a href="mailto:katzkatlego310@gmail.com" 
+                   class="social-icon-link bg-dark bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 45px; height: 45px;">
+                    <i class="bi bi-envelope fs-5"></i>
+                </a>
+            </div>
+
+            <!-- Divider with Heart -->
+            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                <div class="bg-white bg-opacity-25" style="width: 60px; height: 1px;"></div>
+                <div class="text-danger beating-heart">
+                    <i class="bi bi-heart-fill"></i>
+                </div>
+                <div class="bg-white bg-opacity-25" style="width: 60px; height: 1px;"></div>
+            </div>
+
+            <!-- Copyright Text (matches rubric requirement) -->
+            <div class="mb-3">
+                <p class="text-white-50 small mb-1">
+                    © 2026 Developed by <span class="text-white fw-medium">Katlego Mashego</span> using Bootstrap, for portfolio purposes.
+                </p>
+                <p class="text-white-50 small opacity-75">
+                    Built with <i class="bi bi-heart-fill text-danger small"></i> & Bootstrap
+                </p>
+            </div>
+
+            <!-- Back to Top Button -->
+            <button class="btn btn-outline-light btn-sm rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2 mx-auto back-to-top-btn">
+                <i class="bi bi-arrow-up"></i>
+                <span>Back to Top</span>
+            </button>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
